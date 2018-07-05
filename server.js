@@ -3,7 +3,10 @@
 
 // init project
 var express = require("express");
+var dotEnv = require("dotenv");
 var app = express();
+
+dotEnv.load(".env");
 
 // enable CORS (https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
 // so that your API is remotely testable by FCC
